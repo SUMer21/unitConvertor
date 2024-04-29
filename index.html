@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="overlay">
+    <nav id="navBar"><a href="#">UnitConverter.net</a><a href="#" class="space">About Us</a><a href="#" class="space">Affiliations</a><a href="#" class="space">Contact</a><a href="#" class="space"><img src="bar.png" type="images/png" height="25px" style="color: white;"> </a></nav>
+    <div id="mainContent">
+        <h2>Unit Converter Express Version</h2>
+       <form class="unitsId"> <button type="button" class="units" id="units1" onclick="select1()">Length</button><button type="button" id="units2" onclick="select2()" class="units">Temperature</button><button type="button" id="units3" onclick="select3()" class="units">Area</button><button type="button" id="units4" onclick="select4()" class="units">Weight</button><button type="button" id="units5" onclick="select5()" class="units">Time</button></form>
+        <div id="unitCal">
+            <form id="conversionForm"> 
+                <input placeholder="Enter number" type="number" id="inputValue" required value="">
+                <select name="unitSelection" class="inputUnit" id="inputUnit"> 
+                    <option value="meters">Meters</option>
+                    <option  value="kiloMeters">Kilometers</option>
+                    <option  value="centiMeters">Centimeters</option>
+                        <option value="milliMeters">Millimeters</option>
+                        <option  value="miles">Miles</option>
+                        <option  value="inch">Inch</option>
+                        <option  value="yard">Yard</option>
+                </select>
+                <select name="unitSelection2" id="outputUnit"> 
+                    <option value="kiloMeters">Kilometers</option>
+                    <option value="meters">Meters</option>
+                    <option value="centiMeters">Centimeters</option>
+                        <option value="milliMeters">Millimeters</option>
+                        <option value="miles">Miles</option>
+                        <option value="inch">Inch</option>
+                        <option value="yard">Yard</option>
+                </select>
+                <div id="output">Result</div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer id="credits">
+        <a href="#">aboutUs | </a><a href="#">terms |</a><a href="#">privacy policy | </a><a href="#"> © 2024 UnitConverter.net</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
